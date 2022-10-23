@@ -1,3 +1,6 @@
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/pantah-kernel/Image.lz4
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor:64 \
