@@ -9,6 +9,9 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Inherit from the custom device configuration.
 $(call inherit-product, device/google/pantah/aosp_panther.mk)
 
+
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 include device/google/pantah/device-derp.mk
 
 DERP_BUILDTYPE := Official
