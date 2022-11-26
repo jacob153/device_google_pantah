@@ -31,6 +31,7 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 system_ext/priv-app/QualifiedNetworksService/QualifiedNetworksService.apk
 
 # Permissions
+product/etc/sysconfig/adaptivecharging.xml
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 product/etc/sysconfig/pixel_experience_2021_midyear.xml
 product/etc/sysconfig/pixel_experience_2021.xml
