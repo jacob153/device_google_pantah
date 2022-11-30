@@ -14,7 +14,6 @@ include device/google/pantah/device-derp.mk
 DERP_BUILDTYPE := Official
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
-TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 
 PRODUCT_BRAND := google
