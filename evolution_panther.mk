@@ -1,10 +1,20 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common StatiX stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+EVO_BUILD_TYPE := OFFICIAL
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_panther.mk)
@@ -14,7 +24,7 @@ $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
 $(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := statix_panther
+PRODUCT_NAME := evolution_panther
 PRODUCT_MODEL := Pixel 7
 PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google

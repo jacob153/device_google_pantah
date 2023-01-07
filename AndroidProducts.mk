@@ -23,11 +23,13 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/factory_cheetah.mk \
     $(LOCAL_DIR)/aosp_panther.mk \
     $(LOCAL_DIR)/factory_panther.mk \
-    $(LOCAL_DIR)/statix_cheetah.mk \
-    $(LOCAL_DIR)/statix_panther.mk
+    $(LOCAL_DIR)/evolution_cheetah.mk \
+    $(LOCAL_DIR)/evolution_panther.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_cloudripper-userdebug \
     aosp_ravenclaw-userdebug \
     aosp_cheetah-userdebug \
-    aosp_panther-userdebug
+    aosp_panther-userdebug \
+    evolution_cheetah-userdebug\
+    evolution_panther-userdebug
