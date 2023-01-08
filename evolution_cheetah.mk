@@ -15,6 +15,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
 EVO_BUILD_TYPE := OFFICIAL
+TARGET_USES_PREBUILT_CAMERA_SERVICE := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
